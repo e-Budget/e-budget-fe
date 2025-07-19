@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #FFFFFF;
+
+  &__wrapper {
+    max-width: 1200px;
+  }
+
+  &__logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  &__items {
+    list-style-type: none;
+  }
+}

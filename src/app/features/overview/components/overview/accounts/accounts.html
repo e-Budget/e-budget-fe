@@ -1,0 +1,19 @@
+<div class="accounts">
+  <p class="text-uppercase weight-700 mt-0">Accounts</p>
+
+  <div>
+    @for (account of accounts; track $index) {
+      <div class="flex justify-content-between mb-3">
+        <div class="flex align-items-center">
+          <img src="{{ account.logo }}" class="mr-3">
+          <p>{{ account.name }}</p>
+        </div>
+        <p>{{ account.currentBalance | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</p>
+      </div>
+    }
+
+    <hr>
+
+    <p class="text-right weight-700">{{ totalBalance | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</p>
+  </div>
+</div>

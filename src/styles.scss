@@ -44,6 +44,10 @@ body {
   text-transform: uppercase;
 }
 
+.text-white {
+  color: #FFFFFF;
+}
+
 .weight-700 {
   font-weight: 700;
 }
@@ -70,4 +74,12 @@ body {
 
 .py-3 {
   padding-block: 1rem;
+}
+
+.pl-3 {
+  padding-inline-start: 1rem;
+}
+
+.mr-3 {
+  margin-inline-end: 1rem;
 }

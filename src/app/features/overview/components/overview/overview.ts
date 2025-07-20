@@ -5,10 +5,11 @@ import {Header} from '../../../../shared/components/header/header';
 import {Content} from "../../../../shared/components/content/content";
 import {QuickActions} from './quick-actions/quick-actions';
 import {KpiCard} from './kpi-card/kpi-card';
+import {Accounts} from './accounts/accounts';
 
 @Component({
   selector: 'app-overview',
-  imports: [Navbar, Header, Content, KpiCard, QuickActions, Footer],
+  imports: [Navbar, Header, Content, KpiCard, Accounts, QuickActions, Footer],
   templateUrl: './overview.html',
   styleUrl: './overview.scss'
 })

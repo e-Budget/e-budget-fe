@@ -1,0 +1,9 @@
+<div class="balance-item flex align-items-center">
+  <div class="balance-item__icon">
+    <i class="bi {{displayIcon}}"></i>
+  </div>
+  <div class="balance-item__content">
+    <p class="text-uppercase weight-700">{{ displayText }}</p>
+    <p>{{ displayAmount | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</p>
+  </div>
+</div>

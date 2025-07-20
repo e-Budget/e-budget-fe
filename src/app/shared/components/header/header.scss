@@ -1,0 +1,16 @@
+.header {
+  background-color: #1D1616;
+  padding-block: 1rem 10rem;
+
+  &__wrapper {
+    max-width: 1200px;
+
+    .user__picture {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      padding: .25rem;
+    }
+  }
+}

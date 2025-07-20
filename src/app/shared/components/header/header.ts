@@ -15,6 +15,7 @@ export class Header {
   protected salutation: string;
 
   @Input({ required: true }) title!: string;
+  @Input() description: string | null = null;
 
   constructor() {
     this.salutation = this.getSalutation(this.currentDateTime);

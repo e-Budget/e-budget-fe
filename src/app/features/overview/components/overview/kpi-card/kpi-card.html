@@ -1,0 +1,9 @@
+<div class="kpi flex align-items-center">
+  <div class="kpi__icon">
+    <i class="bi {{kpiIcon}}"></i>
+  </div>
+  <div class="kpi__content">
+    <p class="text-uppercase weight-700">{{ kpiName }}</p>
+    <p>{{ kpiValue | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</p>
+  </div>
+</div>

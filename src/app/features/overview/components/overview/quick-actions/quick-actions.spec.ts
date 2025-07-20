@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BalanceItem } from './balance-item';
+import { QuickActions } from './quick-actions';
 
-describe('BalanceItem', () => {
-  let component: BalanceItem;
-  let fixture: ComponentFixture<BalanceItem>;
+describe('QuickActions', () => {
+  let component: QuickActions;
+  let fixture: ComponentFixture<QuickActions>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BalanceItem]
+      imports: [QuickActions]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BalanceItem);
+    fixture = TestBed.createComponent(QuickActions);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

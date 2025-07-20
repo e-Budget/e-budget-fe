@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+          "balance income expense"
+          "accounts accounts quick";
+  justify-content: space-between;
+  column-gap: 3rem;
+  row-gap: 3rem;
+
+  #balance-kpi {
+    grid-area: balance;
+  }
+
+  #income-kpi {
+    grid-area: income;
+  }
+
+  #expense-kpi {
+    grid-area: expense;
+  }
+
+  #quick-actions {
+    grid-area: quick;
+  }
+}

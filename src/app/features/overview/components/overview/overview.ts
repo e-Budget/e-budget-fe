@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import {Navbar} from '../../../../shared/components/navbar/navbar';
 import {Footer} from '../../../../shared/components/footer/footer';
 import {Header} from '../../../../shared/components/header/header';
-import {Balance} from "./balance/balance";
 import {Content} from "../../../../shared/components/content/content";
+import {QuickActions} from './quick-actions/quick-actions';
+import {KpiCard} from './kpi-card/kpi-card';
 
 @Component({
   selector: 'app-overview',
-  imports: [Navbar, Header, Content, Balance, Footer],
+  imports: [Navbar, Header, Content, KpiCard, QuickActions, Footer],
   templateUrl: './overview.html',
   styleUrl: './overview.scss'
 })

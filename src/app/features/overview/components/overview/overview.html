@@ -1,7 +1,11 @@
 <app-navbar></app-navbar>
 <app-header title="overview" description="Take a look at your financial insights"></app-header>
 <app-content>
-    <app-balance></app-balance>
-    <p>teste</p>
+    <div class="grid">
+        <app-kpi-card id="balance-kpi" kpiIcon="bi-plus-slash-minus" kpiName="Your Current Balance" kpiValue="1000000"></app-kpi-card>
+        <app-kpi-card id="income-kpi" kpiIcon="bi-box-arrow-in-up" kpiName="Your Monthly Income" kpiValue="1000"></app-kpi-card>
+        <app-kpi-card id="expense-kpi" kpiIcon="bi-box-arrow-down" kpiName="Your Monthly Expense" kpiValue="100"></app-kpi-card>
+        <app-quick-actions id="quick-actions"></app-quick-actions>
+    </div>
 </app-content>
 <app-footer></app-footer>

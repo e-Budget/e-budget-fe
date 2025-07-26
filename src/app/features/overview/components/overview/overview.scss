@@ -3,7 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
           "balance income expense"
-          "accounts accounts quick";
+          "accounts accounts quick"
+          "accounts accounts budget";
   justify-content: space-between;
   column-gap: 3rem;
   row-gap: 3rem;
@@ -26,5 +27,9 @@
 
   #quick-actions {
     grid-area: quick;
+  }
+
+  #budget {
+    grid-area: budget;
   }
 }

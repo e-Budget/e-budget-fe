@@ -1,0 +1,22 @@
+<div class="budgets">
+  <p class="text-uppercase weight-700 mt-0">Budget</p>
+
+  <div>
+    @for (budget of budgets; track $index) {
+      <div class="bg-grey flex align-items-center p-3 mb-3">
+        <i class="bi {{ budget.icon }} mr-3"></i>
+
+        <div class="w-100">
+          <p class="weight-700 mt-0 mb-2">{{ budget.name }}</p>
+          <div class="flex justify-content-between">
+            <p class="my-0">{{ budget.monthlyBudgetBalance | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</p>
+            <p class="my-0">{{ budget.monthlyBudgetUsedPercentage }}%</p>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar--covered" style="width: 47%;"></div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

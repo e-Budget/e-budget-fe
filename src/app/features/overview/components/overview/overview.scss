@@ -6,7 +6,9 @@
           "accounts accounts quick"
           "accounts accounts budget"
           "analysis analysis budget"
-          "analysis analysis budget";
+          "analysis analysis budget"
+          "latest latest budget"
+          "latest latest budget";
   justify-content: space-between;
   column-gap: 3rem;
   row-gap: 3rem;
@@ -29,6 +31,10 @@
 
   #analysis {
     grid-area: analysis;
+  }
+
+  #latest {
+    grid-area: latest;
   }
 
   #quick-actions {

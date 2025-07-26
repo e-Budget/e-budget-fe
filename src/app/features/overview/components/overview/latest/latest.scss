@@ -1,0 +1,40 @@
+.latest {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6.25rem 0.3125rem rgba(0, 0, 0, 0.1);
+
+  table {
+    border-spacing: 0;
+
+    thead {
+      tr {
+        th {
+          border-bottom: 1px solid #76767632;
+          border-collapse: collapse;
+          padding-block-end: 1rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          img {
+            height: 2.5rem;
+          }
+
+          &.transaction--income {
+            color: #3ED448;
+            font-weight: 600;
+          }
+
+          &.transaction--expense {
+            color: #FF6C6D;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,9 @@
   grid-template-areas:
           "balance income expense"
           "accounts accounts quick"
-          "accounts accounts budget";
+          "accounts accounts budget"
+          "analysis analysis budget"
+          "analysis analysis budget";
   justify-content: space-between;
   column-gap: 3rem;
   row-gap: 3rem;
@@ -23,6 +25,10 @@
 
   #accounts {
     grid-area: accounts;
+  }
+
+  #analysis {
+    grid-area: analysis;
   }
 
   #quick-actions {

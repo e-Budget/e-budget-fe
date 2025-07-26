@@ -1,0 +1,33 @@
+<div class="latest">
+  <p class="text-uppercase weight-700 mt-0">Latest</p>
+
+  <table class="w-100">
+    <thead class="text-center">
+      <tr>
+        <th class="text-uppercase">Name</th>
+        <th class="text-uppercase">Account</th>
+        <th class="text-uppercase">Date</th>
+        <th class="text-uppercase">Amount</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      @for (transaction of latest; track $index) {
+        <tr>
+          <td>
+            <div class="flex justify-content-center align-items-center">
+              <img src="{{ transaction.img }}" class="mr-3">
+
+              <div class="text-left">
+                <p class="weight-700">{{ transaction.name }}</p>
+                <p>{{ transaction.type }}</p>
+              </div>
+            </div>
+          </td>
+          <td>{{ transaction.account }}</td>
+          <td>{{ transaction.date | date : 'longDate' }}</td>
+          <td [class.transaction--income]="transaction.amount >= 0" [class.transaction--expense]="transaction.amount < 0">{{ transaction.amount >= 0 ? '+' : '' }}{{ transaction.amount | currency : 'EUR' : 'symbol' : '1.2-2' : 'pt-PT' }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

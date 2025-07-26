@@ -6,10 +6,11 @@ import {Content} from "../../../../shared/components/content/content";
 import {QuickActions} from './quick-actions/quick-actions';
 import {KpiCard} from './kpi-card/kpi-card';
 import {Accounts} from './accounts/accounts';
+import {Budget} from './budget/budget';
 
 @Component({
   selector: 'app-overview',
-  imports: [Navbar, Header, Content, KpiCard, Accounts, QuickActions, Footer],
+  imports: [Navbar, Header, Content, KpiCard, Accounts, Budget, QuickActions, Footer],
   templateUrl: './overview.html',
   styleUrl: './overview.scss'
 })
